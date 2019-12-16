@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/static/js/main.97913e53.chunk.js",
-    "main.js.map": "/static/js/main.97913e53.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.63c1efab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.63c1efab.js.map",
-    "static/css/2.8271af8e.chunk.css": "/static/css/2.8271af8e.chunk.css",
-    "static/js/2.3a12270b.chunk.js": "/static/js/2.3a12270b.chunk.js",
-    "static/js/2.3a12270b.chunk.js.map": "/static/js/2.3a12270b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.506cf7d7cfae7f89686b6af125d716cb.js": "/precache-manifest.506cf7d7cfae7f89686b6af125d716cb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.8271af8e.chunk.css.map": "/static/css/2.8271af8e.chunk.css.map",
-    "static/js/2.3a12270b.chunk.js.LICENSE": "/static/js/2.3a12270b.chunk.js.LICENSE",
-    "static/media/Iceland.jpg": "/static/media/Iceland.5e5ff0bc.jpg",
-    "static/media/github.svg": "/static/media/github.0a3a0978.svg",
-    "static/media/instagram.svg": "/static/media/instagram.1f2c47db.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.3e2cd069.svg",
-    "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2",
-    "static/media/wavePrimary.svg": "/static/media/wavePrimary.fccb7ad6.svg",
-    "static/media/waveTertiary.svg": "/static/media/waveTertiary.d6a26491.svg"
+    "main.js": "/public/static/js/main.ea174ae1.chunk.js",
+    "main.js.map": "/public/static/js/main.ea174ae1.chunk.js.map",
+    "runtime-main.js": "/public/static/js/runtime-main.f6e726bd.js",
+    "runtime-main.js.map": "/public/static/js/runtime-main.f6e726bd.js.map",
+    "static/css/2.d1b0d203.chunk.css": "/public/static/css/2.d1b0d203.chunk.css",
+    "static/js/2.3a12270b.chunk.js": "/public/static/js/2.3a12270b.chunk.js",
+    "static/js/2.3a12270b.chunk.js.map": "/public/static/js/2.3a12270b.chunk.js.map",
+    "index.html": "/public/index.html",
+    "precache-manifest.7fef0b385c6f8d468071086344533828.js": "/public/precache-manifest.7fef0b385c6f8d468071086344533828.js",
+    "service-worker.js": "/public/service-worker.js",
+    "static/css/2.d1b0d203.chunk.css.map": "/public/static/css/2.d1b0d203.chunk.css.map",
+    "static/js/2.3a12270b.chunk.js.LICENSE": "/public/static/js/2.3a12270b.chunk.js.LICENSE",
+    "static/media/Iceland.jpg": "/public/static/media/Iceland.5e5ff0bc.jpg",
+    "static/media/github.svg": "/public/static/media/github.0a3a0978.svg",
+    "static/media/instagram.svg": "/public/static/media/instagram.1f2c47db.svg",
+    "static/media/linkedin.svg": "/public/static/media/linkedin.3e2cd069.svg",
+    "static/media/index.css": "/public/static/media/roboto-latin-900italic.ebf6d164.woff2",
+    "static/media/wavePrimary.svg": "/public/static/media/wavePrimary.fccb7ad6.svg",
+    "static/media/waveTertiary.svg": "/public/static/media/waveTertiary.d6a26491.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.63c1efab.js",
-    "static/css/2.8271af8e.chunk.css",
+    "static/js/runtime-main.f6e726bd.js",
+    "static/css/2.d1b0d203.chunk.css",
     "static/js/2.3a12270b.chunk.js",
-    "static/js/main.97913e53.chunk.js"
+    "static/js/main.ea174ae1.chunk.js"
   ]
 }
