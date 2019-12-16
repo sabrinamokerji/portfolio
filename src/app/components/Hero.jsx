@@ -5,14 +5,23 @@ import wave from '../../assets/wave.svg';
 
 const useStyles = createUseStyles(theme => ({
   heroText: {
-    textAlign : 'center',
-    color     : theme.color.white,
-    margin    : 0,
-    fontSize  : 70,
-    paddingTop: 140,
+    textAlign: 'center',
+    color    : theme.color.white,
+    margin   : 0,
+    fontSize : 30,
+    padding  : '50px 0 35px',
+    [`@media (min-width: ${theme.breakpoints.sm})`]: {
+      fontSize  : 55,
+      paddingTop: 65,
+    },
+    [`@media (min-width: ${theme.breakpoints.md})`]: {
+      fontSize: 70,
+      padding : '140px 0 50px',
+    },
   },
   heroItem: {
     background: theme.color.primary,
+    paddng    : '0 15px',
   },
   wave: {
     display  : 'block',

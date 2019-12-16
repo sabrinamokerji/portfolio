@@ -11,10 +11,14 @@ const useStyles = createUseStyles(theme => ({
   logo: {
     border    : `3px solid ${theme.color.black}`,
     color     : theme.color.black,
-    fontSize  : 22,
+    fontSize  : 16,
     fontWeight: 700,
-    padding   : 10,
+    padding   : 8,
     fontFamily: theme.text.base,
+    [`@media (min-width: ${theme.breakpoints.sm})`]: {
+      fontSize: 22,
+      padding : 10,
+    },
   },
 }))
 

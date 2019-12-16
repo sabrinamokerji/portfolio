@@ -13,6 +13,7 @@ const useStyles = createUseStyles(theme => ({
     color         : 'inherit',
     cursor        : 'pointer',
     display       : 'inline-flex',
+    fontFamily    : theme.text.base,
     fontSize      : 16,
     fontWeight    : 500,
     justifyContent: 'center',
