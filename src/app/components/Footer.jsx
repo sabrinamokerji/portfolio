@@ -16,9 +16,9 @@ const useStyles = createUseStyles(theme => ({
     },
   },
   social: {
-    maxWidth: '25px',
-    width   : '100%',
-    margin  : '10px',
+    width : '25px',
+    height: '25px',
+    margin: '10px',
   },
   email: {
     padding : '10px',
