@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from './Grid';
 import { createUseStyles } from 'react-jss';
-import wave from '../../assets/wave.svg';
+import wave from '../../assets/wavePrimary.svg';
 
 const useStyles = createUseStyles(theme => ({
   heroText: {

@@ -6,22 +6,44 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles(theme => ({
   mockScoreContainer: {
-    marginBottom: theme.spacing * 6,
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      flexDirection: 'column-reverse',
+    },
   },
+  // @TODO: Create typography shared styles
   projectTitle: {
-    fontSize: 30,
+    fontSize: 25,
     margin: `0 0 ${theme.spacing}px`,
+    [`@media (min-width: ${theme.breakpoints.sm})`]: {
+      fontSize: 30,
+    },
   },
   projectSubtitle: {
-    fontSize: 22,
-    margin: `${theme.spacing * 3}px 0 ${theme.spacing}px`,
+    fontSize: 20,
+    margin: '26px 0 16px',
+    [`@media (min-width: ${theme.breakpoints.sm})`]: {
+      fontSize: 22,
+      margin: `${theme.spacing * 3}px 0 ${theme.spacing}px`,
+    },
   },
-  scoresContainer: {
-    marginTop: `${theme.spacing * 2}px`,
+  scoreButtons: {
+    margin: `${theme.spacing}px 0 ${theme.spacing * 3}px`,
+    [`@media (min-width: ${theme.breakpoints.md})`]: {
+      margin: `${theme.spacing * 2}px 0 ${theme.spacing}px`,
+    },
     '& > .item': {
-      marginRight: theme.spacing * 2,
-      '&:last-child': {
-        marginRight: 0,
+      [`@media (min-width: ${theme.breakpoints.sm})`]: {
+        marginRight: theme.spacing * 2,
+        '&:last-child': {
+          marginRight: 0,
+        },
+      },
+      [`@media (max-width: ${theme.breakpoints.md})`]: {
+        textAlign: 'center',
+        '& > button': {
+          fontSize: 16,
+          padding: '6px 10px',
+        },
       },
     },
   },
@@ -34,12 +56,12 @@ export const MockCreditScore = () => {
 
   return (
     <Grid container className={classes.mockScoreContainer}>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} md={6}>
         <CreditScoreSimulator value={score} />
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} md={6}>
         <Grid container>
-          <Grid item>
+          <Grid item xs={12}>
             <h3 className={classes.projectTitle}>Credit Score Simulator</h3>
             <p>
               I created a React component that slides a ticker along a SVG to display where a credit score falls within the 300-850 range. The component was used in conjunction with a credit pull API for a mortgage pre-qualification tool.
@@ -49,15 +71,15 @@ export const MockCreditScore = () => {
               Click the different score buttons to see how it works.
             </p>
           </Grid>
-          <Grid item>
-            <Grid container className={classes.scoresContainer}>
+          <Grid item xs={12}>
+            <Grid container className={classes.scoreButtons}>
               {mockScores.map((value, index) => {
                 return (
-                  <Grid item key={index}>
+                  <Grid item xs={3} sm="auto" key={index}>
                     <Button
                       color   = "primary"
                       size    = "large"
-                      variant = "filled"
+                      design  = "filled"
                       onClick = {() => setScore(value)}
                     >
                       {value}

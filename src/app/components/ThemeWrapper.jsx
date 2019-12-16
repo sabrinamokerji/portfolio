@@ -11,7 +11,7 @@ export const ThemeWrapper = ({ children }) => {
       grey     : '#dddddd',
       primary  : '#3F34FF',
       secondary: '#FF54FF',
-      tertiary : '#80CFE6',
+      tertiary : '#a2eaff',
       text     : '#282828',
       white    : '#ffffff',
     },

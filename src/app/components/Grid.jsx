@@ -231,6 +231,11 @@ const useStyles = createUseStyles(theme => ({
     '&.justify-space-evenly': {
       justifyContent: 'space-evenly',
     },
+    '&.layoutWidth': {
+      padding : `0 ${theme.spacing}px`,
+      maxWidth: 1600 + (theme.spacing * 2),
+      margin  : '0 auto',
+    },
   },
 }))
 

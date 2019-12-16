@@ -105,11 +105,11 @@ export const Button = ({ ...props }) => {
   const {
     children,
     className,
-    color   = 'inherit',
+    color  = 'inherit',
     onClick,
-    size    = 'medium',
-    type    = 'button',
-    variant = 'text',
+    size   = 'medium',
+    type   = 'button',
+    design = 'text',
     ...buttonProps
   } = props;
   const classes = useStyles();
@@ -119,10 +119,10 @@ export const Button = ({ ...props }) => {
       // Contructs classNames conditionally
       className={clsx(
         classes.button, 
-        variant,
+        design,
         {
-          [`${variant}${capitalize(color)}`]: color !== 'inherit',
-          [`${variant}Size${capitalize(size)}`]: size !== 'medium',
+          [`${design}${capitalize(color)}`]: color !== 'inherit',
+          [`${design}Size${capitalize(size)}`]: size !== 'medium',
           [`size${capitalize(size)}`]: size !== 'medium',
         },
         className,
@@ -131,7 +131,7 @@ export const Button = ({ ...props }) => {
       onClick = {onClick}
       size    = {size}
       type    = {type}
-      variant = {variant}
+      design  = {design}
       {...buttonProps}
     >
       {children}
@@ -143,8 +143,8 @@ Button.propTypes = {
   children : PropTypes.node,
   className: PropTypes.string,
   color    : PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
+  design   : PropTypes.oneOf(['filled', 'outlined', 'text']),
   onClick  : PropTypes.func,
   size     : PropTypes.oneOf(['small', 'medium', 'large']),
   type     : PropTypes.oneOf(['button', 'reset', 'submit']),
-  variant  : PropTypes.oneOf(['filled', 'outlined', 'text']),
 };

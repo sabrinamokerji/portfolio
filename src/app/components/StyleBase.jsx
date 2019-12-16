@@ -21,6 +21,10 @@ const useStyles = createUseStyles(theme => ({
     },
     a: {
       textDecoration: 'none',
+      color         : theme.color.secondary,
+      '&:hover': {
+        opacity: 0.8,
+      },
     },
   },
 }))
