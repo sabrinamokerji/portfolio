@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b389980a8906670594a7c72ef227764",
+    "revision": "ba595212cb729b87cac563db9ec44144",
     "url": "/portfolio/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.299e2f31.chunk.js.LICENSE"
   },
   {
-    "revision": "bc25fce41386a6682217",
-    "url": "/portfolio/static/js/main.88c5050e.chunk.js"
+    "revision": "41ccd44318db150270c2",
+    "url": "/portfolio/static/js/main.c5a65481.chunk.js"
   },
   {
     "revision": "2b7dc7a69db986d40a02",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Iceland.5e5ff0bc.jpg"
   },
   {
-    "revision": "0a3a0978834655eadc804efda1d3a443",
-    "url": "/portfolio/static/media/github.0a3a0978.svg"
+    "revision": "518890456149d05f5129d8b494325b6e",
+    "url": "/portfolio/static/media/github.51889045.svg"
   },
   {
     "revision": "1f2c47dbb8af9e0c6b14c0616a98b621",
