@@ -8,7 +8,7 @@ export const ProjectsContainer = () => {
     <Grid container>
       <Grid item xs={12}>
         <Grid container className="layoutWidth">
-          <Grid item>
+          <Grid item xs={12}>
             <Grid container justify="center">
               <Grid item>
                 <SectionTitle>Projects</SectionTitle>
