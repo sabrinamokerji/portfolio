@@ -40,13 +40,13 @@ export const Footer = () => {
       alignItems = "center"
       className  = {classes.footerContainer}
     >
-      <Grid item xs={12}>
+      <Grid item>
         <a className={classes.email} href="mailto:mokerjis@gmail.com">
           mokerjis@gmail.com
         </a>
       </Grid>
-      <Grid item xs={12}>
-        <Grid container className={classes.socialIcons}>
+      <Grid item>
+        <Grid container className={classes.socialIcons} justify="center">
           <Grid item>
             <a
               target = "_blank"
@@ -76,7 +76,7 @@ export const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item>
         <p className={classes.copyright}>
           &copy; {currentYear} Sabrina Mokerji
         </p>
