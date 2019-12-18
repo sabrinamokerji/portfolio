@@ -101,7 +101,7 @@ const useStyles = createUseStyles(theme => ({
   },
 }))
 
-export const Button = ({ ...props }) => {
+export const Button = (props) => {
   const {
     children,
     className,
@@ -110,7 +110,7 @@ export const Button = ({ ...props }) => {
     size   = 'medium',
     type   = 'button',
     design = 'text',
-    ...buttonProps
+    buttonProps,
   } = props;
   const classes = useStyles();
 
