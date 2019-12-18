@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.js": "/public/static/js/main.ea174ae1.chunk.js",
-    "main.js.map": "/public/static/js/main.ea174ae1.chunk.js.map",
-    "runtime-main.js": "/public/static/js/runtime-main.f6e726bd.js",
-    "runtime-main.js.map": "/public/static/js/runtime-main.f6e726bd.js.map",
-    "static/css/2.d1b0d203.chunk.css": "/public/static/css/2.d1b0d203.chunk.css",
-    "static/js/2.3a12270b.chunk.js": "/public/static/js/2.3a12270b.chunk.js",
-    "static/js/2.3a12270b.chunk.js.map": "/public/static/js/2.3a12270b.chunk.js.map",
-    "index.html": "/public/index.html",
-    "precache-manifest.b24c4d9a5316ad98fa6d4d23084e673d.js": "/public/precache-manifest.b24c4d9a5316ad98fa6d4d23084e673d.js",
-    "service-worker.js": "/public/service-worker.js",
-    "static/css/2.d1b0d203.chunk.css.map": "/public/static/css/2.d1b0d203.chunk.css.map",
-    "static/js/2.3a12270b.chunk.js.LICENSE": "/public/static/js/2.3a12270b.chunk.js.LICENSE",
-    "static/media/Iceland.jpg": "/public/static/media/Iceland.5e5ff0bc.jpg",
-    "static/media/github.svg": "/public/static/media/github.0a3a0978.svg",
-    "static/media/instagram.svg": "/public/static/media/instagram.1f2c47db.svg",
-    "static/media/linkedin.svg": "/public/static/media/linkedin.3e2cd069.svg",
-    "static/media/index.css": "/public/static/media/roboto-latin-900italic.ebf6d164.woff2",
-    "static/media/wavePrimary.svg": "/public/static/media/wavePrimary.fccb7ad6.svg",
-    "static/media/waveTertiary.svg": "/public/static/media/waveTertiary.d6a26491.svg"
+    "main.js": "/portfolio/static/js/main.a1c10b0d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a1c10b0d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.98e6ef87.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.98e6ef87.js.map",
+    "static/css/2.15c52e38.chunk.css": "/portfolio/static/css/2.15c52e38.chunk.css",
+    "static/js/2.3a12270b.chunk.js": "/portfolio/static/js/2.3a12270b.chunk.js",
+    "static/js/2.3a12270b.chunk.js.map": "/portfolio/static/js/2.3a12270b.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.43df347ba29092a45036f932d4d8ed4b.js": "/portfolio/precache-manifest.43df347ba29092a45036f932d4d8ed4b.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.15c52e38.chunk.css.map": "/portfolio/static/css/2.15c52e38.chunk.css.map",
+    "static/js/2.3a12270b.chunk.js.LICENSE": "/portfolio/static/js/2.3a12270b.chunk.js.LICENSE",
+    "static/media/Iceland.jpg": "/portfolio/static/media/Iceland.5e5ff0bc.jpg",
+    "static/media/github.svg": "/portfolio/static/media/github.0a3a0978.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.1f2c47db.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.3e2cd069.svg",
+    "static/media/index.css": "/portfolio/static/media/roboto-latin-900italic.ebf6d164.woff2",
+    "static/media/wavePrimary.svg": "/portfolio/static/media/wavePrimary.fccb7ad6.svg",
+    "static/media/waveTertiary.svg": "/portfolio/static/media/waveTertiary.d6a26491.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6e726bd.js",
-    "static/css/2.d1b0d203.chunk.css",
+    "static/js/runtime-main.98e6ef87.js",
+    "static/css/2.15c52e38.chunk.css",
     "static/js/2.3a12270b.chunk.js",
-    "static/js/main.ea174ae1.chunk.js"
+    "static/js/main.a1c10b0d.chunk.js"
   ]
 }
