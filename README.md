@@ -1,4 +1,4 @@
-## sabrinamokerji.github.io
+## portfolio
 My personal portfolio made with React.js
 
 Check it out at http://sabrinaswebdesigns.com/
