@@ -1,3 +1,5 @@
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/stable';
 import 'typeface-roboto';
 import React from 'react';
 import ReactDOM from 'react-dom';
