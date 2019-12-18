@@ -239,10 +239,11 @@ const useStyles = createUseStyles(theme => ({
   },
 }))
 
-export const Grid = ({ ...props }) => {
+export const Grid = (props) => {
   const {
     alignContent = 'stretch',
     alignItems   = 'stretch',
+    children,
     className,
     container = false,
     direction = 'row',
@@ -254,7 +255,7 @@ export const Grid = ({ ...props }) => {
     wrap      = 'wrap',
     xl        = false,
     xs        = false,
-    ...gridProps
+    gridProps,
   } = props;
   const classes = useStyles();
 
@@ -280,7 +281,9 @@ export const Grid = ({ ...props }) => {
         className,
       )}
       {...gridProps}
-    />
+    >
+      {children}
+    </div>
   );
 };
 
@@ -325,5 +328,5 @@ Grid.propTypes = {
   md  : PropTypes.oneOf(gridSizes),
   sm  : PropTypes.oneOf(gridSizes),
   xs  : PropTypes.oneOf(gridSizes),
-  wrap: PropTypes.oneOf(["nowrap", "wrap", "wrap-reverse"])
+  wrap: PropTypes.oneOf(["nowrap", "wrap", "wrap-reverse"]),
 };

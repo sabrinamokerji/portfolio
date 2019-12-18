@@ -16,8 +16,8 @@ const useStyles = createUseStyles(theme => ({
   },
 }))
 
-export const SectionTitle = ({ ...props }) => {
-  const { children, ...titleProps } = props;
+export const SectionTitle = (props) => {
+  const { children, titleProps } = props;
   const classes = useStyles();
   return (
     <h2 className={classes.sectionTitle} {...titleProps}>
