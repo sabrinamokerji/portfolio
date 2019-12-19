@@ -233,7 +233,7 @@ const useStyles = createUseStyles(theme => ({
     },
     '&.layoutWidth': {
       padding : `0 ${theme.spacing}px`,
-      maxWidth: 1600 + (theme.spacing * 2),
+      maxWidth: 1400 + (theme.spacing * 2),
       margin  : '0 auto',
     },
   },

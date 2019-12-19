@@ -47,6 +47,11 @@ const useStyles = createUseStyles(theme => ({
       },
     },
   },
+  demoWrapper: {
+    [`@media (max-width: ${theme.breakpoints.md})`]: {
+      'justify-content': 'center',
+    },
+  },
 }))
 
 export const MockCreditScore = () => {
@@ -66,27 +71,32 @@ export const MockCreditScore = () => {
             <p>
               I created a React component that slides a ticker along a SVG to display where a credit score falls within the 300-850 range. The component was used in conjunction with a credit pull API for a mortgage pre-qualification tool.
             </p>
-            <h4 className={classes.projectSubtitle}>Give it a try</h4>
-            <p>
-              Click the different score buttons to see how it works.
-            </p>
-          </Grid>
-          <Grid item xs={12}>
-            <Grid container className={classes.scoreButtons}>
-              {mockScores.map((value, index) => {
-                return (
-                  <Grid item xs={3} sm="auto" key={index}>
-                    <Button
-                      color   = "primary"
-                      size    = "large"
-                      design  = "filled"
-                      onClick = {() => setScore(value)}
-                    >
-                      {value}
-                    </Button>
+            <Grid container className={classes.demoWrapper}>
+              <Grid item>
+                <h4 className={classes.projectSubtitle}>Give it a try</h4>
+                <p>
+                  Click the different score buttons to see how it works.
+                </p>
+                <Grid item xs={12}>
+                  <Grid container className={classes.scoreButtons}>
+                    {mockScores.map((value, index) => {
+                      return (
+                        <Grid item xs={3} sm="auto" key={index}>
+                          <Button
+                            color   = "primary"
+                            size    = "large"
+                            design  = "filled"
+                            onClick = {() => setScore(value)}
+                          >
+                            {value}
+                          </Button>
+                        </Grid>
+                      );
+                    })}
                   </Grid>
-                );
-              })}
+                </Grid>
+              </Grid>
+              
             </Grid>
           </Grid>
         </Grid>
