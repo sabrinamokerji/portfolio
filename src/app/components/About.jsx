@@ -30,13 +30,18 @@ const useStyles = createUseStyles(theme => ({
     display     : 'block',
     marginBottom: '-5px',
   },
+  imageWrapper: {
+    [`@media (min-width: ${theme.breakpoints.md})`]: {
+      textAlign: 'right',
+    },
+  },
   image: {
     maxWidth: '600px',
     width   : '100%',
     margin: '20px auto 0',
     [`@media (min-width: ${theme.breakpoints.md})`]: {
-      paddingLeft: '60px',
       marginTop: 0,
+      paddingLeft: 30,
     },
   },
 }))
@@ -56,31 +61,33 @@ export const About = () => {
                 <SectionTitle>About me</SectionTitle>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <h3 className={classes.projectTitle}>
-              Creative type with way too many hobbies
-            </h3>
-            <p>
-              I really have a passion for learning new things and going places
-              that I've never been. I've always grasped onto any type of
-              creative expression that I could find as an outlet - but nothing
-              has ever aligned with that more perfectly than my career as a
-              software engineer. I get to challenge myself and think creatively
-              every day and that is so important to me.
-            </p>
-            <p>
-              When I'm not coding the day away, I'm probably traveling,
-              attending local music shows, taking a yoga class, checking out a
-              new brewery, or wandering around somewhere random with my camera.
-            </p>
-          </Grid>
-          <Grid item md={6}>
-            <img
-              className = {classes.image}
-              src       = {Iceland}
-              alt       = "Standing on a mountain in Iceland"
-            />
+            <Grid container justify="center">
+              <Grid item xs={12} md={6}>
+                <h3 className={classes.projectTitle}>
+                  Creative type with way too many hobbies
+                </h3>
+                <p>
+                  I really have a passion for learning new things and going places
+                  that I've never been. I've always grasped onto any type of
+                  creative expression that I could find as an outlet - but nothing
+                  has ever aligned with that more perfectly than my career as a
+                  software engineer. I get to challenge myself and think creatively
+                  every day and that is so important to me.
+                </p>
+                <p>
+                  When I'm not coding the day away, I'm probably traveling,
+                  attending local music shows, taking a yoga class, checking out a
+                  new brewery, or wandering around somewhere random with my camera.
+                </p>
+              </Grid>
+              <Grid item md={6} className={classes.imageWrapper}>
+                <img
+                  className = {classes.image}
+                  src       = {Iceland}
+                  alt       = "Standing on a mountain in Iceland"
+                />
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
