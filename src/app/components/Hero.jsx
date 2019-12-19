@@ -4,19 +4,33 @@ import { createUseStyles } from 'react-jss';
 import wave from '../../assets/wavePrimary.svg';
 
 const useStyles = createUseStyles(theme => ({
-  heroText: {
-    textAlign: 'center',
-    color    : theme.color.white,
-    margin   : 0,
-    fontSize : 30,
-    padding  : '50px 0 35px',
+  heroTitle: {
+    textAlign   : 'center',
+    color       : theme.color.white,
+    fontSize    : 30,
+    paddingTop  : 50,
+    marginBottom: 5,
     [`@media (min-width: ${theme.breakpoints.sm})`]: {
-      fontSize  : 55,
-      paddingTop: 65,
+      fontSize    : 55,
+      paddingTop  : 65,
+      marginBottom: 10,
     },
     [`@media (min-width: ${theme.breakpoints.md})`]: {
-      fontSize: 70,
-      padding : '140px 0 50px',
+      fontSize  : 70,
+      paddingTop: 130,
+    },
+  },
+  heroSubtitle: {
+    fontSize     : 22,
+    paddingBottom: 35,
+    textAlign    : 'center',
+    color        : theme.color.white,
+    [`@media (min-width: ${theme.breakpoints.sm})`]: {
+      fontSize: 30,
+    },
+    [`@media (min-width: ${theme.breakpoints.md})`]: {
+      fontSize: 40,
+      paddingBottom: 50,
     },
   },
   heroItem: {
@@ -34,7 +48,8 @@ export const Hero = () => {
   return (
     <Grid container alignItems="center" justify="center">
       <Grid item xs={12} className={classes.heroItem}>
-        <h1 className={classes.heroText}>Hello! I'm Sabrina.</h1>
+        <h1 className={classes.heroTitle}>Hello! I'm Sabrina.</h1>
+        <h2 className={classes.heroSubtitle}>I'm a Front End Engineer.</h2>
       </Grid>
       <Grid item xs={12}>
         <img className={classes.wave} src={wave} alt="Wave" />
