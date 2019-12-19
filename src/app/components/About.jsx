@@ -67,24 +67,31 @@ export const About = () => {
                   Creative type with way too many hobbies
                 </h3>
                 <p>
-                  I really have a passion for learning new things and going places
-                  that I've never been. I've always grasped onto any type of
-                  creative expression that I could find as an outlet - but nothing
-                  has ever aligned with that more perfectly than my career as a
-                  software engineer. I get to challenge myself and think creatively
-                  every day and that is so important to me.
+                  I really have a passion for learning new things and going
+                  places that I've never been. I've always grasped onto any type
+                  of creative expression that I could find as an outlet - but
+                  nothing has ever aligned with that more perfectly than my
+                  career as a software engineer. I get to challenge myself and
+                  think creatively every day and that is so important to me.
+                </p>
+                <p>
+                  I'm a software engineer with a focus on the front end. I love
+                  getting my hands dirty with different JavaScript technologies.
+                  My current stack consists of React, TypeScript, Redux,
+                  Node.js, AWS, and Serverless.
                 </p>
                 <p>
                   When I'm not coding the day away, I'm probably traveling,
-                  attending local music shows, taking a yoga class, checking out a
-                  new brewery, or wandering around somewhere random with my camera.
+                  attending local music shows, taking a yoga class, checking out
+                  a new brewery, or wandering around somewhere random with my
+                  camera.
                 </p>
               </Grid>
               <Grid item md={6} className={classes.imageWrapper}>
                 <img
-                  className = {classes.image}
-                  src       = {Iceland}
-                  alt       = "Standing on a mountain in Iceland"
+                  className={classes.image}
+                  src={Iceland}
+                  alt="Standing on a mountain in Iceland"
                 />
               </Grid>
             </Grid>

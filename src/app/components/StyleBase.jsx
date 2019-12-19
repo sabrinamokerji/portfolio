@@ -19,6 +19,13 @@ const useStyles = createUseStyles(theme => ({
     body: {
       margin: 0,
     },
+    'h1, h2, h3, h4, h5, h6': {
+      margin: 0,
+    },
+    p: {
+      margin    : '0 0 16px',
+      lineHeight: 1.5,
+    },
     a: {
       textDecoration: 'none',
       color         : theme.color.secondary,

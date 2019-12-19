@@ -49,7 +49,7 @@ const useStyles = createUseStyles(theme => ({
   },
   demoWrapper: {
     [`@media (max-width: ${theme.breakpoints.md})`]: {
-      'justify-content': 'center',
+      justifyContent: 'center',
     },
   },
 }))
