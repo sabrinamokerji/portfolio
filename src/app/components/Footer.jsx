@@ -26,6 +26,7 @@ const useStyles = createUseStyles(theme => ({
   },
   copyright: {
     fontSize: 14,
+    margin  : 0,
   },
 }))
 
