@@ -61,10 +61,10 @@ export const MockCreditScore = () => {
 
   return (
     <Grid container className={classes.mockScoreContainer}>
-      <Grid item xs={12} md={6}>
+      <Grid item md={6}>
         <CreditScoreSimulator value={score} />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item md={6}>
         <Grid container>
           <Grid item xs={12}>
             <h3 className={classes.projectTitle}>Credit Score Simulator</h3>

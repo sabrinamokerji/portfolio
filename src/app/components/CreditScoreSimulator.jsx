@@ -79,45 +79,43 @@ export const CreditScoreSimulator = (props) => {
   };
 
   return (
-    <Grid container>
-      <Grid item xs={12}>
-        <Grid container justify="center" className={classes.scoreContainer}>
-          <span className={classes.creditGaugeWrapper}>
-            <svg
-              className = {classes.creditGauge}
-              width     = "261px"
-              height    = "147px"
-              viewBox   = "0 0 261 147"
-              version   = "1.1"
-            >
-              <path
-                fill = {scoreColors.default}
-                d    = "M18.0390265,126.914469 L5,126.893901 C5,56.8688388 61.139214,0 130.5,0 C199.755853,0 256,56.7627402 256,126.893901 L242.960451,126.893901 C241.36379,64.2646924 191.624758,14 130.5,14 C69.3685512,14 19.6253207,64.2756977 18.0390268,126.914459 Z"
-              />
-              <text fill={scoreColors.text}>
-                <tspan x="0" y="146">
-                  {minScore}
-                </tspan>
-              </text>
-              <text fill={scoreColors.text}>
-                <tspan x="238" y="146">
-                  {maxScore}
-                </tspan>
-              </text>
-              <text className={classes.largeScore} fill={scoreColors.text}>
-                <tspan x="79" y="124">
-                  {creditScore}
-                </tspan>
-              </text>
-            </svg>
-            <div className={classes.circle}>
-              <span className={classes.innerCircle}>&nbsp;</span>
-              <div style={tickerPosition} className={classes.tickerWrapper}>
-                <div style={tickerStyle}>&nbsp;</div>
-              </div>
+    <Grid container justify="center" className={classes.scoreContainer}>
+      <Grid item>
+        <div className={classes.creditGaugeWrapper}>
+          <svg
+            className = {classes.creditGauge}
+            width     = "261px"
+            height    = "147px"
+            viewBox   = "0 0 261 147"
+            version   = "1.1"
+          >
+            <path
+              fill = {scoreColors.default}
+              d    = "M18.0390265,126.914469 L5,126.893901 C5,56.8688388 61.139214,0 130.5,0 C199.755853,0 256,56.7627402 256,126.893901 L242.960451,126.893901 C241.36379,64.2646924 191.624758,14 130.5,14 C69.3685512,14 19.6253207,64.2756977 18.0390268,126.914459 Z"
+            />
+            <text fill={scoreColors.text}>
+              <tspan x="0" y="146">
+                {minScore}
+              </tspan>
+            </text>
+            <text fill={scoreColors.text}>
+              <tspan x="238" y="146">
+                {maxScore}
+              </tspan>
+            </text>
+            <text className={classes.largeScore} fill={scoreColors.text}>
+              <tspan x="79" y="124">
+                {creditScore}
+              </tspan>
+            </text>
+          </svg>
+          <div className={classes.circle}>
+            <span className={classes.innerCircle}>&nbsp;</span>
+            <div style={tickerPosition} className={classes.tickerWrapper}>
+              <div style={tickerStyle}>&nbsp;</div>
             </div>
-          </span>
-        </Grid>
+          </div>
+        </div>
       </Grid>
     </Grid>
   );
