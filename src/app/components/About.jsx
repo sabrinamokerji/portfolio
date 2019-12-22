@@ -89,9 +89,9 @@ export const About = () => {
               </Grid>
               <Grid item md={6} className={classes.imageWrapper}>
                 <img
-                  className={classes.image}
-                  src={Iceland}
-                  alt="Standing on a mountain in Iceland"
+                  className = {classes.image}
+                  src       = {Iceland}
+                  alt       = "Standing on a mountain in Iceland"
                 />
               </Grid>
             </Grid>
